@@ -1,0 +1,68 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<style>
+.home-background {
+  background: url(../../assets/img/logo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+</style>
+
+<ion-content class="home-background">
+
+	<!-- <ion-card>
+		<ion-card-header>
+			login Form
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list no-line>
+				<ion-item>
+					<ion-input type="text" placeholder="Enter the Registration ID"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-input type="text" placeholder="Password"></ion-input>
+				</ion-item>
+			</ion-list>
+		</ion-card-content>
+	</ion-card> -->
+
+
+<!-- <ion-list no-line>
+				<ion-item>
+					<ion-input type="text" placeholder="Enter the Registration ID"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-input type="text" placeholder="Password"></ion-input>
+				</ion-item>
+			</ion-list>
+
+
+			<ion-list> -->
+<ion-list>
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="pwd"></ion-input>
+  </ion-item>
+<ion-item>
+	<button ion-button color="secondary" (click)="login()">login</button>
+	<button ion-button color="secondary" (click)="signUp()">Sign Up</button>
+</ion-item>
+</ion-list>
+
+<h1>{{warning}}</h1>
+
+
+
+		
+</ion-content>
